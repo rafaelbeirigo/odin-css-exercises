@@ -1,3 +1,37 @@
+* Assignments
+
+- foundations [0/3]
+  - [ ] intro-to-css [0/5]
+    - [ ] 01-css-methods
+    - [ ] 02-class-id-selectors
+    - [ ] 03-grouping-selectors
+    - [ ] 04-chaining-selectors
+    - [ ] 05-descendant-combinator
+  - [ ] block-and-inline [0/2]
+    - [ ] 01-margin-and-padding-1
+    - [ ] 02-margin-and-padding-2
+  - cascade [0/1]
+    - [ ] 01-cascade-fix
+  - [ ] flex [0/7]
+    - [ ] 01-flex-center
+    - [ ] 02-flex-header
+    - [ ] 03-flex-header-2
+    - [ ] 04-flex-information
+    - [ ] 05-flex-modal
+    - [ ] 06-flex-layout
+    - [ ] 07-flex-layout-2
+- intermediate-html-css [0/2]
+  - [ ] advanced-grid [0/2]
+    - [ ] 01-responsive-holy-grail
+    - [ ] 02-holy-grail-mockup
+  - [ ] positioning-grid [0/1]
+    - [ ] 01-basic-holy-grail
+- advanced-html-css [0/1]
+  - [ ] animation [0/3]
+    - [ ] 01-button-hover
+    - [ ] 02-pop-up
+    - [ ] 03-dropdown-menu
+
 * CSS Exercises
   :PROPERTIES:
   :CUSTOM_ID: css-exercises
