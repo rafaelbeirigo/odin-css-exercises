@@ -76,7 +76,7 @@ The properties you need to add to each element are:
       <body>
         <div>Style me via the external method!</div>
         <p>I would like to be styled with the internal method, please.</p>
-        <button>Inline Method</button>
+        <<Button>>
       </body>
     </html>
     #+end_src
@@ -109,6 +109,13 @@ The properties you need to add to each element are:
     #+end_src
 
 - =button=: an orange background and a font size of 18px
+  - Me: As the styling for the button will be /inline/, we bring the element here.
+
+    ~<<Button>> +≡~
+
+    #+begin_src html :noweb-ref Button
+    <button>Inline Method</button>
+    #+end_src
 
 ** Desired Outcome
    :PROPERTIES:
