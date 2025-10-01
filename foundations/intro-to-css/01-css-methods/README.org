@@ -59,6 +59,7 @@ The properties you need to add to each element are:
   #+end_src
 
   As we'll need to link =style.css= on =index.html=, let's tangle it here, with the original content plus our necessary additions.
+  Let's link =style.css= there.
 
   [[file:index.html][index.html]] ≡
 
@@ -69,6 +70,7 @@ The properties you need to add to each element are:
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="style.css">
       <title>Methods for Adding CSS</title>
     </head>
     <body>
