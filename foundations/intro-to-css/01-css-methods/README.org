@@ -40,6 +40,23 @@ The properties you need to add to each element are:
 
 - =div=: a red background, white text, a font size of 32px, center
   aligned, and bold
+
+  Ok, let's start here.
+  The element in question is:
+  #+begin_src html
+  <div>Style me via the external method!</div>
+  #+end_src
+
+  As it should use the /external/ method, we'll have to tangle a new CSS file.
+  There will only be one declaration there.
+
+  [[file:style.css][style.css]] ≡
+
+  #+begin_src css :tangle style.css
+  div {
+    background-color:red;
+  }
+  #+end_src
 - =p=: a green background, white text, and a font size of 18px
 - =button=: an orange background and a font size of 18px
 
