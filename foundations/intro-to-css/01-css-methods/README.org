@@ -57,6 +57,27 @@ The properties you need to add to each element are:
     background-color:red;
   }
   #+end_src
+
+  As we'll need to link =style.css= on =index.html=, let's tangle it here, with the original content plus our necessary additions.
+
+  [[file:index.html][index.html]] ≡
+
+  #+begin_src html :tangle index.html
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Methods for Adding CSS</title>
+    </head>
+    <body>
+      <div>Style me via the external method!</div>
+      <p>I would like to be styled with the internal method, please.</p>
+      <button>Inline Method</button>
+    </body>
+  </html>
+  #+end_src
 - =p=: a green background, white text, and a font size of 18px
 - =button=: an orange background and a font size of 18px
 
