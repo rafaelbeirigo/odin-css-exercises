@@ -51,7 +51,7 @@ The properties you need to add to each element are:
 
     #+begin_src css :tangle style.css
     div {
-      <<Declarations>>
+      <<External Declarations>>
     }
     #+end_src
 
@@ -68,6 +68,9 @@ The properties you need to add to each element are:
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css">
+        <style>
+          <<Internal Declarations>>
+        </style>
         <title>Methods for Adding CSS</title>
       </head>
       <body>
@@ -80,9 +83,9 @@ The properties you need to add to each element are:
 
     Now we add the required CSS declarations.
 
-    ~<<Declarations>> +≡~
+    ~<<External Declarations>> +≡~
 
-    #+begin_src css :noweb-ref Declarations
+    #+begin_src css :noweb-ref External Declarations
     background-color:red;
     color:white;
     font-size:32px;
@@ -91,6 +94,16 @@ The properties you need to add to each element are:
     #+end_src
 
 - =p=: a green background, white text, and a font size of 18px
+  - Me: This one has to be done with the /internal/ method.
+    Let's add the ~style~ element to =index.html='s ~head~.
+    Then we add the CSS declaration block for the element type we need to style, in this case ~p~.
+
+    ~<<Internal Declarations>> +≡~
+
+    #+begin_src css :noweb-ref Internal Declarations
+    
+    #+end_src
+
 - =button=: an orange background and a font size of 18px
 
 ** Desired Outcome
