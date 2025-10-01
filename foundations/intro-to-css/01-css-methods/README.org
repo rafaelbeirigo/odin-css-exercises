@@ -110,11 +110,12 @@ The properties you need to add to each element are:
 
 - =button=: an orange background and a font size of 18px
   - Me: As the styling for the button will be /inline/, we bring the element here.
+    Then we add the ~style~ /attributte/ for the element, with the appropriate declarations.
 
     ~<<Button>> +≡~
 
     #+begin_src html :noweb-ref Button
-    <button>Inline Method</button>
+    <button style="background-color:orange; font-size=18px;">Inline Method</button>
     #+end_src
 
 ** Desired Outcome
