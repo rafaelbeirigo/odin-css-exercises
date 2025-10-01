@@ -44,7 +44,7 @@ The properties you need to add to each element are:
     #+end_src
 
     As it should use the /external/ method, we'll have to tangle a new CSS file.
-    There will only be one declaration there.
+    There will only be one declaration block there.
 
     [[file:style.css][style.css]] ≡
 
