@@ -1,3 +1,5 @@
+# -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
+
 * Class and ID Selectors
   :PROPERTIES:
   :CUSTOM_ID: class-and-id-selectors
