@@ -54,7 +54,7 @@ The properties you need to add to each element are:
 
   #+begin_src css :tangle style.css
   div {
-    background-color:red;
+    <<Declarations>>
   }
   #+end_src
 
@@ -79,6 +79,18 @@ The properties you need to add to each element are:
       <button>Inline Method</button>
     </body>
   </html>
+  #+end_src
+
+  Now we add the required CSS declarations.
+
+  ~<<Declarations>> +≡~
+
+  #+begin_src css :noweb-ref Declarations
+  background-color:red;
+  color:white;
+  font-size:32px;
+  text-align:center;
+  font-weight:bold;
   #+end_src
 - =p=: a green background, white text, and a font size of 18px
 - =button=: an orange background and a font size of 18px
