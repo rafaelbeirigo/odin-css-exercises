@@ -2,7 +2,7 @@
 
 - foundations [0/3]
   - [ ] intro-to-css [0/5]
-    - [ ] 01-css-methods
+    - [ ] [[https://github.com/rafaelbeirigo/odin-css-exercises/blob/main/foundations/intro-to-css/01-css-methods/README.org][01-css-methods]]
     - [ ] 02-class-id-selectors
     - [ ] 03-grouping-selectors
     - [ ] 04-chaining-selectors
