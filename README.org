@@ -3,7 +3,7 @@
 - foundations [0/3]
   - [-] intro-to-css [1/5]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/blob/main/foundations/intro-to-css/01-css-methods/README.org][01-css-methods]]
-    - [ ] 02-class-id-selectors
+    - [ ] [[https://github.com/rafaelbeirigo/odin-css-exercises/blob/main/foundations/intro-to-css/02-class-id-selectors/README.org][02-class-id-selectors]]
     - [ ] 03-grouping-selectors
     - [ ] 04-chaining-selectors
     - [ ] 05-descendant-combinator
