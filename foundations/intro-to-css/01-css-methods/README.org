@@ -45,6 +45,7 @@ The properties you need to add to each element are:
 
     As it should use the /external/ method, we'll have to tangle a new CSS file.
     There will only be one declaration block there.
+    We follow the rule and use a *type* selector, in this case for the ~div~ element.
 
     [[file:style.css][style.css]] ≡
 
