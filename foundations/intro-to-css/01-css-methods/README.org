@@ -1,3 +1,5 @@
+# -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
+
 * Methods for Adding CSS
   :PROPERTIES:
   :CUSTOM_ID: methods-for-adding-css
