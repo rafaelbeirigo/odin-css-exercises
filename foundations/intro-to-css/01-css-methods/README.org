@@ -101,7 +101,11 @@ The properties you need to add to each element are:
     ~<<Internal Declarations>> +≡~
 
     #+begin_src css :noweb-ref Internal Declarations
-    
+    p {
+      background-color:green;
+      color:white;
+      font-size:18px;
+    }
     #+end_src
 
 - =button=: an orange background and a font size of 18px
