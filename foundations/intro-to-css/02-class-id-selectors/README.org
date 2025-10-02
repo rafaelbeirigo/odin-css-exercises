@@ -147,6 +147,38 @@ image below.
   font-family: Verdana, "DejaVu Sans", sans-serif;
   #+end_src
 
+  From the assignment:
+
+  #+begin_quote
+  - *The third element*: in addition to the styles for all odd numbered elements, add a font size of 24px
+  #+end_quote
+
+  and
+
+  #+begin_quote
+  *** Self Check
+  [...]
+  - Does the Number 3 element have multiple classes?
+  #+end_quote
+
+  I then must create another class for Number 3.
+
+  ~<<Declaration Blocks>> +≡~
+
+  #+begin_src css :noweb-ref Declaration Blocks
+  .number-three {
+    font-size: 24px;
+  }
+  #+end_src
+
+  Then add the class to Number 3's attribute.
+
+  ~<<Number 3 classes>> +≡~
+
+  #+begin_src css :noweb-ref Number 3 classes
+  number-three
+  #+end_src
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
