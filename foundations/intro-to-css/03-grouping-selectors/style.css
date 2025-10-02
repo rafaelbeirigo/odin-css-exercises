@@ -1,1 +1,9 @@
-/* Add CSS Styling */
+.click-me {
+  background-color: #000000;
+  color: rgb(255 255 255);
+  font-weight: bold;
+}
+
+.no-click-me {
+  background-color: hsl(60 100% 50%);
+}

@@ -46,14 +46,44 @@ Then we add one declaration for each element's class.
   <<no-click-me declarations>>
 }
 #+end_src
+
+Now we add the properties that are specific to each element.
+
+#+begin_quote
 - *The first element*: a black background and white text
+#+end_quote
+
+For this color (and all the others):
+
+#+begin_quote
+[...] the format of any colors is entirely up to you; we trust you'll practice using the different values!
+#+end_quote
+
+Let's start with HEX and ~rgb()~.
+
+~<<click-me declarations>> +≡~
+
+#+begin_src css :noweb-ref click-me declarations
+background-color: #000000;
+color: rgb(255 255 255);
+#+end_src
+
+#+begin_quote
 - *The second element*: a yellow background
-- *Both elements*: a font size of 28px and a list of fonts containing =Helvetica= and =Times New Roman=, with =sans-serif= as a fallback
+#+end_quote
 
-** Desired Outcome
+Let's use HSL for this one: yellow is obtained with:
+- Hue: 60
+- Saturation: 100%
+- Lighting: 50%
 
-#+caption: desired outcome
-[[./desired-outcome.png]]
+
+~<<no-click-me declarations>> +≡~
+
+#+begin_src css :noweb-ref no-click-me declarations
+background-color: hsl(60 100% 50%);
+#+end_src
+
 
 *** Self Check
 
