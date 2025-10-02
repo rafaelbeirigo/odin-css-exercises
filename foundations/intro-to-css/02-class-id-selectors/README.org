@@ -62,7 +62,6 @@ image below.
   <p class="odd">Number 1 - I'm a class!</p>
   #+end_src
 
-  For the font-size, I estimated it using an image editor.
 
   ~<<Number 3>> +≡~
 
