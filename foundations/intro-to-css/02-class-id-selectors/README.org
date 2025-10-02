@@ -29,9 +29,9 @@ image below.
     </head>
     <body>
       <<Number 1>>
-      <div>Number 2 - I'm one ID.</div>
+      <<Number 2>>
       <<Number 3>>
-      <div>Number 4 - I'm another ID.</div>
+      <<Number 4>>
       <<Number 5>>
     </body>
   </html>
@@ -185,6 +185,26 @@ image below.
   number-three
   #+end_src
 
+  Now, the even numbers.
+  From the Self Check:
+
+  #+begin_quote
+  - Do the even numbered =div= elements have unique IDs?
+  #+end_quote
+
+  Let's add IDs for them.
+
+  ~<<Number 2>> +≡~
+
+  #+begin_src html :noweb-ref Number 2
+  <div id="number-two">Number 2 - I'm one ID.</div>
+  #+end_src
+
+  ~<<Number 4>> +≡~
+
+  #+begin_src html :noweb-ref Number 4
+  <div id="number-four">Number 4 - I'm another ID.</div>
+  #+end_src
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
