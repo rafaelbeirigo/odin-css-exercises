@@ -249,6 +249,51 @@ image below.
   font-size: 36px;
   #+end_src
 
+  Now, for Number 4.
+
+  ~<<Declaration Blocks>> +≡~
+
+  #+begin_src css :noweb-ref Declaration Blocks
+  #number-four {
+    <<number-four Declarations>>
+  }
+  #+end_src
+
+  From the assignment:
+
+  #+begin_quote
+  - *The fourth element*: a light green background, a font size of 24px, and bold
+  #+end_quote
+
+  For the "light green background", I want to use another method to set the color: HSL (Hue, Saturation, Lightness).
+  Starting from the basic green, and saturation, just adjusting Lightness seemed to do the trick.
+  - Hue: 120 (green)
+  - Saturation: 100%
+  - Lightness: 75%
+
+  Let's add this to Number 4's CSS declaration block.
+
+  ~<<number-four Declarations>> +≡~
+
+  #+begin_src css :noweb-ref number-four Declarations
+  background-color: hsl(120 100% 75%);
+  #+end_src
+
+  Now the font properties.
+
+  ~<<number-four Declarations>> +≡~
+
+  #+begin_src css :noweb-ref number-four Declarations
+  font-size: 24px;
+  font-weight: bold;
+  #+end_src
+
+  And this checks the Self Check:
+
+  #+begin_quote
+  - Do the even numbered =div= elements have unique IDs?
+  #+end_quote
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
