@@ -6,7 +6,7 @@
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/blob/main/foundations/intro-to-css/02-class-id-selectors/README.org][02-class-id-selectors]]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/03-grouping-selectors][03-grouping-selectors]]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/04-chaining-selectors][04-chaining-selectors]]
-    - [ ] 05-descendant-combinator
+    - [ ] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/05-descendant-combinator][05-descendant-combinator]]
   - [ ] block-and-inline [0/2]
     - [ ] 01-margin-and-padding-1
     - [ ] 02-margin-and-padding-2
