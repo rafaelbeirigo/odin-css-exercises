@@ -1,7 +1,4 @@
 * Grouping Selectors
-  :PROPERTIES:
-  :CUSTOM_ID: grouping-selectors
-  :END:
 Let's build a little off the previous exercise. Here, you're going to
 give two elements each a unique class name, then add rules for styles
 that both elements share as well as their own unique styles. Make sure
@@ -20,16 +17,10 @@ properties you need to add to each element are:
   =Helvetica= and =Times New Roman=, with =sans-serif= as a fallback
 
 ** Desired Outcome
-   :PROPERTIES:
-   :CUSTOM_ID: desired-outcome
-   :END:
 #+caption: desired outcome
 [[./desired-outcome.png]]
 
 *** Self Check
-    :PROPERTIES:
-    :CUSTOM_ID: self-check
-    :END:
 - Does each element have a unique class name?
 - Did you use the grouping selector for styles that both elements share?
 - Did you make separate rules for the styles unique to each element?
