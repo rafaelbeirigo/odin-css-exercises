@@ -114,10 +114,14 @@ image below.
     - a list of fonts containing =Verdana= and =DejaVu Sans= with =sans-serif= as a fallback
   #+end_quote
 
+  Using a /color-picker/ I identified the color of the "light red/pink background" as ~ffa7a7~ in HEX.
+  As the color is in HEX, we have to prefix it with a ~#~.
+  Let's add this to the ~odd~ class declaration block.
+
   ~<<odd Declarations>> +≡~
 
   #+begin_src css :noweb-ref odd Declarations
-
+  background-color: #ffa7a7;
   #+end_src
 
 You will then have to add rules in the CSS file provided using the correct selector syntax.
