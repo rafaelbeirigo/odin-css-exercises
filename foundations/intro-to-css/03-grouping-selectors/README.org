@@ -24,6 +24,28 @@ Then we add a class for each element.
   </body>
 </html>
 #+end_src
+
+Now let's add prepare =style.css= to receive the declaration blocks.
+
+[[file:style.css][style.css]] ≡
+
+#+begin_src css :tangle style.css
+<<declaration blocks>>
+#+end_src
+
+Then we add one declaration for each element's class.
+
+~<<declaration blocks>> +≡~
+
+#+begin_src css :noweb-ref declaration blocks
+.click-me {
+  <<click-me declarations>>
+}
+
+.no-click-me {
+  <<no-click-me declarations>>
+}
+#+end_src
 - *The first element*: a black background and white text
 - *The second element*: a yellow background
 - *Both elements*: a font size of 28px and a list of fonts containing =Helvetica= and =Times New Roman=, with =sans-serif= as a fallback
