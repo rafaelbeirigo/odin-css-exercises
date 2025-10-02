@@ -46,13 +46,13 @@ image below.
   - Numbers 2 and 4 share only the *font-family*.
     They could share a class with *that property*, but the other ones will need to use the ID selector.
 
-  |   | background-color | color | font-size | font-weight | font-family |
-  |---+------------------+-------+-----------+-------------+-------------|
-  | 1 | ffa7a7           | black | X         | normal      | sans-serif  |
-  | 3 | ffa7a7           | black | 1.5 X     | normal      | sans-serif  |
-  | 5 | ffa7a7           | black | X         | normal      | sans-serif  |
-  | 2 | white            | blue  | 3 X       | normal      | serif       |
-  | 4 | 80ff80           | black | X         | bold        | serif       |
+  | Number | background-color | color | font-size | font-weight | font-family |
+  |--------+------------------+-------+-----------+-------------+-------------|
+  |      1 | ffa7a7           | black | X         | normal      | sans-serif  |
+  |      3 | ffa7a7           | black | 1.5 X     | normal      | sans-serif  |
+  |      5 | ffa7a7           | black | X         | normal      | sans-serif  |
+  |      2 | white            | blue  | 3 X       | normal      | serif       |
+  |      4 | 80ff80           | black | X         | bold        | serif       |
 
 You will then have to add rules in the CSS file provided
 using the correct selector syntax. Look over the outcome image
