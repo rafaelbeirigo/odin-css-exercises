@@ -106,6 +106,13 @@ image below.
   #+end_src
 
   Now the declarations themselves, one by one to make sure we get it right.
+  From the assignment, we have:
+
+  #+begin_quote
+  - *All odd numbered elements*:
+    - a light red/pink background, and
+    - a list of fonts containing =Verdana= and =DejaVu Sans= with =sans-serif= as a fallback
+  #+end_quote
 
   ~<<odd Declarations>> +≡~
 
