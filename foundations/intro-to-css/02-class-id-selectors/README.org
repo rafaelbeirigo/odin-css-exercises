@@ -205,6 +205,50 @@ image below.
   #+begin_src html :noweb-ref Number 4
   <div id="number-four">Number 4 - I'm another ID.</div>
   #+end_src
+
+  Then the CSS declaration blocks.
+  As I am using /IDs/ for selectors, I need to prefix them with ~#~.
+
+  ~<<Declaration Blocks>> +≡~
+
+  #+begin_src css :noweb-ref Declaration Blocks
+  #number-two {
+    <<number-two Declarations>>
+  }
+  #+end_src
+
+  Then the declarations for each ID.
+  First, for Number 2.
+  From the assignment:
+
+  #+begin_quote
+  - *The second element*: blue text and a font size of 36px
+  #+end_quote
+
+  Let's add those declarations.
+  First for the color, it's /blue/, but
+
+  #+begin_quote
+  For the colors in this exercise, try using a non-keyword value (RGB, HEX, or HSL).
+  #+end_quote
+
+  Then, I'll try something new for me: RGB with parentheses.
+  We need nothing of red and green, and all of blue.
+
+  ~<<number-two Declarations>> +≡~
+
+  #+begin_src css :noweb-ref number-two Declarations
+  color: rgb(0, 0, 255);
+  #+end_src
+
+  Then the font size.
+
+  ~<<number-two Declarations>> +≡~
+
+  #+begin_src css :noweb-ref number-two Declarations
+  font-size: 36px;
+  #+end_src
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
