@@ -86,6 +86,33 @@ image below.
   <<Declaration Blocks>>
   #+end_src
 
+  Now we add the declaration block for the class ~odd~.
+
+  ~<<Declaration Blocks>> +≡~
+
+  #+begin_src css :noweb-ref Declaration Blocks
+  <<odd Declaration Block>>
+  #+end_src
+
+  Then we add a code block for the declarations themselves.
+  As the selector is a /class/, we prefix it with a dot.
+
+  ~<<odd Declaration Block>> +≡~
+
+  #+begin_src css :noweb-ref odd Declaration Block
+  .odd {
+    <<odd Declarations>>
+  }
+  #+end_src
+
+  Now the declarations themselves, one by one to make sure we get it right.
+
+  ~<<odd Declarations>> +≡~
+
+  #+begin_src css :noweb-ref odd Declarations
+
+  #+end_src
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
