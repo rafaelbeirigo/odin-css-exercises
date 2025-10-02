@@ -12,7 +12,7 @@ There are several elements in the HTML file provided, which you will
 have to add either class or ID attributes to, as noted in the outcome
 image below.
 
-- Me: Ok, the elements are in =index.html.
+- Me: Ok, the elements are in =index.html=.
   Let's start by preparing the tangle, so we can modify it here.
 
   [[file:index.html][index.html]] ≡
