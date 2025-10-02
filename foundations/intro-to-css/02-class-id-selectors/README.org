@@ -124,6 +124,15 @@ image below.
   background-color: #ffa7a7;
   #+end_src
 
+  For the fonts with fallback, I need to separate them with commas.
+  Also use quotes for the name that contains space.
+
+  ~<<odd Declarations>> +≡~
+
+  #+begin_src css :noweb-ref odd Declarations
+  font-family: Verdana, "DejaVu Sans", sans-serif;
+  #+end_src
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
