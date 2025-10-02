@@ -84,9 +84,21 @@ Let's use HSL for this one: yellow is obtained with:
 background-color: hsl(60 100% 50%);
 #+end_src
 
+Now, for the shared properties.
 
-*** Self Check
+#+begin_quote
+- *Both elements*: a font size of 28px and a list of fonts containing =Helvetica= and =Times New Roman=, with =sans-serif= as a fallback
+#+end_quote
 
-- Does each element have a unique class name?
-- Did you use the grouping selector for styles that both elements share?
-- Did you make separate rules for the styles unique to each element?
+As the title of the assignment suggests, we'll use *grouping* for that.
+To use grouping for the selectors in a CSS declaration block, we use all the grouped selectors, separated by commas.
+
+~<<declaration blocks>> +≡~
+
+#+begin_src css :noweb-ref declaration blocks
+.click-me,
+.no-click-me {
+  font-size: 28px;
+  font-family: Helvetica, "Times New Roman", sans-serif;
+}
+#+end_src
