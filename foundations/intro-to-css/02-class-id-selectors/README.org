@@ -168,11 +168,12 @@ image below.
   #+end_quote
 
   I then must create another class for Number 3.
+  As both Number 3 and 4 share the same font size, they'll use this class.
 
   ~<<Declaration Blocks>> +≡~
 
   #+begin_src css :noweb-ref Declaration Blocks
-  .number-three {
+  .adjust-font-size {
     font-size: 24px;
   }
   #+end_src
@@ -182,7 +183,7 @@ image below.
   ~<<Number 3 classes>> +≡~
 
   #+begin_src css :noweb-ref Number 3 classes
-  number-three
+  adjust-font-size
   #+end_src
 
   Now, the even numbers.
@@ -200,10 +201,12 @@ image below.
   <div id="number-two">Number 2 - I'm one ID.</div>
   #+end_src
 
+  Number 4 will have its ID, and share a class with Number 3 for font size.
+
   ~<<Number 4>> +≡~
 
   #+begin_src html :noweb-ref Number 4
-  <div id="number-four">Number 4 - I'm another ID.</div>
+  <div id="number-four" class="adjust-font-size">Number 4 - I'm another ID.</div>
   #+end_src
 
   Then the CSS declaration blocks.
