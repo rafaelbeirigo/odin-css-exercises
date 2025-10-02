@@ -72,10 +72,8 @@ image below.
 
   ~<<Number 3>> +≡~
 
-  #+begin_src html :noweb-ref Number 3
-  <p
-    class="<<Number 3 classes>>"
-  >Number 3 - I'm a class, but cooler!</p>
+  #+begin_src html :noweb-ref Number 3 :noweb-prefix no
+  <p class="<<Number 3 classes>>">Number 3 - I'm a class, but cooler!</p>
   #+end_src
 
   Let's add the first class for Number 3.
