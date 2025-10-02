@@ -76,6 +76,16 @@ image below.
   <p>Number 5 - I'm a class!</p>
   #+end_src
 
+  Now, let's create the ~odd~ CSS declaration block.
+  I should be inside =style.css=; let's tangle it with the original contents, and a placeholder for the declaration blocks.
+
+  [[file:style.css][style.css]] ≡
+
+  #+begin_src css :tangle style.css
+  /* Add CSS Styling */
+  <<Declaration Blocks>>
+  #+end_src
+
 You will then have to add rules in the CSS file provided using the correct selector syntax.
 Look over the outcome image carefully, and try to keep in mind which elements look similarly styled (classes), which ones may be completely unique from the rest (ID), and which ones have slight variations from others (multiple classes).
 
