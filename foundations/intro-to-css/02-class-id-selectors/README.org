@@ -54,6 +54,7 @@ image below.
   |      2 | white            | blue  | 36px      | normal      | serif                              |
   |      4 | 80ff80           | black | 24px      | bold        | serif                              |
 
+  Let's use this knowledge to apply a class to each odd number, and an attribute to one of them.
 You will then have to add rules in the CSS file provided
 using the correct selector syntax. Look over the outcome image
 carefully, and try to keep in mind which elements look similarly styled
