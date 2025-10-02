@@ -62,11 +62,28 @@ image below.
   <p class="odd">Number 1 - I'm a class!</p>
   #+end_src
 
+  Number 3 is special:
+
+  #+begin_quote
+  *** Self Check
+  [...]
+  - Does the Number 3 element have multiple classes?
+  #+end_quote
 
   ~<<Number 3>> +≡~
 
   #+begin_src html :noweb-ref Number 3
-  <p class="odd">Number 3 - I'm a class, but cooler!</p>
+  <p
+    class="<<Number 3 classes>>"
+  >Number 3 - I'm a class, but cooler!</p>
+  #+end_src
+
+  Let's add the first class for Number 3.
+
+  ~<<Number 3 classes>> +≡~
+
+  #+begin_src css :noweb-ref Number 3 classes
+  odd
   #+end_src
 
   ~<<Number 5>> +≡~
