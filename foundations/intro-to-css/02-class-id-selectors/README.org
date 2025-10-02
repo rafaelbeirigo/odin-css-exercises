@@ -54,7 +54,13 @@ image below.
   |      2 | white            | blue  | 36px      | normal      | serif                              |
   |      4 | 80ff80           | black | 24px      | bold        | serif                              |
 
-  Let's use this knowledge to apply a class to each odd number.
+  From the assignment's Self Check, we have:
+
+  #+begin_quote
+  - Do the odd numbered =p= elements share a class?
+  #+end_quote
+
+  Let's integrate all that knowledge, and apply a class to each odd number.
 
   ~<<Number 1>> +≡~
 
