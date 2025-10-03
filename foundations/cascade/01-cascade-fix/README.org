@@ -75,3 +75,64 @@ body {
 
 The two rules controlling font size both have *classes* as descriptors.
 Again, the last defined one is applied, and we have to swap them to fix the problem.
+
+Now, the last paragraph:
+
+#+begin_src html
+<div class="text">I'm a div with thin text and a child div!
+  <div class="text child">I'm a smaller child div with extra bold text.</div>
+</div>
+#+end_src
+
+Let's just reorganize without changing anything, for clarity:
+
+#+begin_src html
+<div class="text">
+  I'm a div with thin text and a child div!
+  <div class="text child">
+    I'm a smaller child div with extra bold text.
+  </div>
+</div>
+#+end_src
+
+The currently applied rules are, in order:
+
+#+begin_src css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+#+end_src
+
+In this case, we have the selectors:
+1. /div.text/: *class + type*
+2. /.child/: *class*
+
+The first selector /div.text/ has higher priority.
+We could fix it by giving an even higher priority to the appropriate rule.
+This could be done by chaining it with another class, ~text~.
+
+#+begin_src css
+.text.child {
+  color: rgb(0, 0, 0);
+  font-weight: 800;
+  font-size: 14px;
+}
+
+div.text {
+  color: rgb(0, 0, 0);
+  font-size: 22px;
+  font-weight: 100;
+}
+#+end_src
