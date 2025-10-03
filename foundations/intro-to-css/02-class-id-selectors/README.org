@@ -58,6 +58,8 @@ image below.
   - Does the Number 3 element have multiple classes?
   #+end_quote
 
+  Let's LP-prepare Number 3 for multiple classes.
+
   ~<<Number 3>> +≡~
 
   #+begin_src html :noweb-ref Number 3 :noweb-prefix no
