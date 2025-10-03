@@ -1,8 +1,14 @@
 * CSS Methods
 
+The rules of this assignment:
 
+#+begin_quote
 You can edit the CSS file by adding, removing, or editing selectors for a declaration block, or by moving declaration blocks around.
+#+end_quote
+
+#+begin_quote
 *You should not edit the HTML file or any of the actual styles in the CSS*.
+#+end_quote
 
 There are multiple ways to solve this exercise, so we have provided some of the possible solutions for each element.
 
