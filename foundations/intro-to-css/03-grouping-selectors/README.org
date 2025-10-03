@@ -1,3 +1,5 @@
+* Grouping Selectors
+
 First we tangle =index.html= with the original contents.
 
 #+begin_quote
