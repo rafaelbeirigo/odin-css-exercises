@@ -11,7 +11,7 @@ You can edit the CSS file by adding, removing, or editing selectors for a declar
 #+end_quote
 
 Let's start with the /buttons/.
-First the *Confirm* one.
+First, the *Confirm* one.
 
 From =index.html=:
 
