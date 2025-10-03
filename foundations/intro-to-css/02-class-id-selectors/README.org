@@ -89,20 +89,12 @@ image below.
   <<Declaration Blocks>>
   #+end_src
 
-  Now we add the declaration block for the class ~odd~.
+  Then we add a code block for ~odd~'s CSS declarations.
+  As the selector is a /class/, we prefix it with a dot.
 
   ~<<Declaration Blocks>> +≡~
 
   #+begin_src css :noweb-ref Declaration Blocks
-  <<odd Declaration Block>>
-  #+end_src
-
-  Then we add a code block for the declarations themselves.
-  As the selector is a /class/, we prefix it with a dot.
-
-  ~<<odd Declaration Block>> +≡~
-
-  #+begin_src css :noweb-ref odd Declaration Block
   .odd {
     <<odd Declarations>>
   }
