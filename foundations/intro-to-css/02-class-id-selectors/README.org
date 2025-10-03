@@ -1,279 +1,280 @@
 # -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
 
 * Class and ID Selectors
-  In order to use *classes* and *IDs*, we need to add the corresponding attributes to the proper elements.
-  This is done in =index.html=.
-  Let's start tangling it, so we can modify it here.
+In order to use *classes* and *IDs*, we need to add the corresponding attributes to the proper elements.
+This is done in =index.html=.
+Let's start tangling it, so we can modify it here.
 
-  [[file:index.html][index.html]] ≡
+[[file:index.html][index.html]] ≡
 
-  #+begin_src html :tangle index.html
-  <!DOCTYPE html>
-  <html lang="en">
-    <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Class and ID Selectors</title>
-      <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-      <<Number 1>>
-      <<Number 2>>
-      <<Number 3>>
-      <<Number 4>>
-      <<Number 5>>
-    </body>
-  </html>
-  #+end_src
+#+begin_src html :tangle index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class and ID Selectors</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <<Number 1>>
+    <<Number 2>>
+    <<Number 3>>
+    <<Number 4>>
+    <<Number 5>>
+  </body>
+</html>
+#+end_src
 
-  Then we add either a class or an ID for each element.
-  From the assignment's Self Check, we have:
+Then we add either a class or an ID for each element.
+From the assignment's Self Check, we have:
 
-  #+begin_quote
-  - Do the odd numbered =p= elements share a class?
-  #+end_quote
+#+begin_quote
+- Do the odd numbered =p= elements share a class?
+#+end_quote
 
-  Let's add every odd number to a class called, well, ~odd~.
+Let's add every odd number to a class called, well, ~odd~.
 
-  ~<<Number 1>> +≡~
+~<<Number 1>> +≡~
 
-  #+begin_src html :noweb-ref Number 1
-  <p class="odd">Number 1 - I'm a class!</p>
-  #+end_src
+#+begin_src html :noweb-ref Number 1
+<p class="odd">Number 1 - I'm a class!</p>
+#+end_src
 
-  Number 3 is special; as per the assignment:
+Number 3 is special; as per the assignment:
 
-  #+begin_quote
-  - Does the Number 3 element have multiple classes?
-  #+end_quote
+#+begin_quote
+- Does the Number 3 element have multiple classes?
+#+end_quote
 
-  Let's LP-prepare Number 3 for multiple classes.
+Let's LP-prepare Number 3 for multiple classes.
 
-  ~<<Number 3>> +≡~
+~<<Number 3>> +≡~
 
-  #+begin_src html :noweb-ref Number 3 :noweb-prefix no
-  <p class="<<Number 3 classes>>">Number 3 - I'm a class, but cooler!</p>
-  #+end_src
+#+begin_src html :noweb-ref Number 3 :noweb-prefix no
+<p class="<<Number 3 classes>>">Number 3 - I'm a class, but cooler!</p>
+#+end_src
 
-  Let's add the first class for Number 3.
+Let's add the first class for Number 3.
 
-  ~<<Number 3 classes>> +≡~
+~<<Number 3 classes>> +≡~
 
-  #+begin_src css :noweb-ref Number 3 classes
-  odd
-  #+end_src
+#+begin_src css :noweb-ref Number 3 classes
+odd
+#+end_src
 
-  ~<<Number 5>> +≡~
+~<<Number 5>> +≡~
 
-  #+begin_src html :noweb-ref Number 5
-  <p class="odd">Number 5 - I'm a class!</p>
-  #+end_src
+#+begin_src html :noweb-ref Number 5
+<p class="odd">Number 5 - I'm a class!</p>
+#+end_src
 
-  Now, let's create the ~odd~ CSS declaration block.
-  I should be inside =style.css=; let's tangle it, and a placeholder for the declaration blocks.
+Now, let's create the ~odd~ CSS declaration block.
+I should be inside =style.css=; let's tangle it, and a placeholder for the declaration blocks.
 
-  [[file:style.css][style.css]] ≡
+[[file:style.css][style.css]] ≡
 
-  #+begin_src css :tangle style.css
-  <<Declaration Blocks>>
-  #+end_src
+#+begin_src css :tangle style.css
+<<Declaration Blocks>>
+#+end_src
 
-  Then we add a code block for ~odd~'s CSS declarations.
-  As the selector is a /class/, we prefix it with a dot.
+Then we add a code block for ~odd~'s CSS declarations.
+As the selector is a /class/, we prefix it with a dot.
 
-  ~<<Declaration Blocks>> +≡~
+~<<Declaration Blocks>> +≡~
 
-  #+begin_src css :noweb-ref Declaration Blocks
-  .odd {
-    <<odd Declarations>>
-  }
-  #+end_src
+#+begin_src css :noweb-ref Declaration Blocks
+.odd {
+  <<odd Declarations>>
+}
+#+end_src
 
-  Now the declarations themselves, one by one to make sure we get it right.
-  From the assignment, we have:
+Now the declarations themselves, one by one to make sure we get it right.
+From the assignment, we have:
 
-  #+begin_quote
-  - *All odd numbered elements*:
-    - a light red/pink background, and
-    - a list of fonts containing =Verdana= and =DejaVu Sans= with =sans-serif= as a fallback
-  #+end_quote
+#+begin_quote
+- *All odd numbered elements*:
+  - a light red/pink background, and
+  - a list of fonts containing =Verdana= and =DejaVu Sans= with =sans-serif= as a fallback
+#+end_quote
 
-  Using a /color-picker/ I identified the color of the "light red/pink background" as ~ffa7a7~ in HEX.
-  As the color is in HEX, we have to prefix it with a ~#~.
-  Let's add this to the ~odd~ class declaration block.
+Using a /color-picker/ I identified the color of the "light red/pink background" as ~ffa7a7~ in HEX.
+As the color is in HEX, we have to prefix it with a ~#~.
+Let's add this to the ~odd~ class declaration block.
 
-  ~<<odd Declarations>> +≡~
+~<<odd Declarations>> +≡~
 
-  #+begin_src css :noweb-ref odd Declarations
-  background-color: #ffa7a7;
-  #+end_src
+#+begin_src css :noweb-ref odd Declarations
+background-color: #ffa7a7;
+#+end_src
 
-  For the fonts with fallback, I need to separate them with commas.
-  Also use quotes for the name that contains space.
+For the fonts with fallback, I need to separate them with commas.
+Also use quotes for the name that contains space.
 
-  ~<<odd Declarations>> +≡~
+~<<odd Declarations>> +≡~
 
-  #+begin_src css :noweb-ref odd Declarations
-  font-family: Verdana, "DejaVu Sans", sans-serif;
-  #+end_src
+#+begin_src css :noweb-ref odd Declarations
+font-family: Verdana, "DejaVu Sans", sans-serif;
+#+end_src
 
-  From the assignment:
+From the assignment:
 
-  #+begin_quote
-  - *The third element*: in addition to the styles for all odd numbered elements, add a font size of 24px
-  #+end_quote
+#+begin_quote
+- *The third element*: in addition to the styles for all odd numbered elements, add a font size of 24px
+#+end_quote
 
-  and
+and
 
-  #+begin_quote
-  - Does the Number 3 element have multiple classes?
-  #+end_quote
+#+begin_quote
+- Does the Number 3 element have multiple classes?
+#+end_quote
 
-  I then must create another class for Number 3.
-  Now, as both Number 3 and Number 4 share the same font size, we'll use this class for that property,
+I then must create another class for Number 3.
+Now, as both Number 3 and Number 4 share the same font size, we'll use this class for that property,
 
-  ~<<Declaration Blocks>> +≡~
+~<<Declaration Blocks>> +≡~
 
-  #+begin_src css :noweb-ref Declaration Blocks
-  .adjust-font-size {
-    font-size: 24px;
-  }
-  #+end_src
-
-  and add that class to both Numbers.
-  We first add it to Number 3.
-
-  ~<<Number 3 classes>> +≡~
-
-  #+begin_src css :noweb-ref Number 3 classes
-  adjust-font-size
-  #+end_src
-
-  Then to Number 4.
-  As we'll need to also add an ID later, let's add a code block ID.
-
-  ~<<Number 4>> +≡~
-
-  #+begin_src html :noweb-ref Number 4 :noweb-prefix nil
-  <div <<number 4 attributes>> >Number 4 - I'm another ID.</div>
-  #+end_src
-
-  Then, add the class.
-
-  ~<<number 4 attributes>> +≡~
-
-  #+begin_src html :noweb-ref number 4 attributes
-  class="adjust-font-size"
-  #+end_src
-
-  Now, let's focus on the even numbers.
-  From the Self Check:
-
-  #+begin_quote
-  - Do the even numbered =div= elements have unique IDs?
-  #+end_quote
-
-  Let's add IDs for them.
-
-  ~<<Number 2>> +≡~
-
-  #+begin_src html :noweb-ref Number 2
-  <div id="number-two">Number 2 - I'm one ID.</div>
-  #+end_src
-
-  Number 4 will have its own ID too.
-
-  ~<<number 4 attributes>> +≡~
-
-  #+begin_src html :noweb-ref number 4 attributes
-  id="number-four"
-  #+end_src
-
-  Then the CSS declaration blocks.
-  As I am using /IDs/ for selectors, I need to prefix them with ~#~.
-
-  ~<<Declaration Blocks>> +≡~
-
-  #+begin_src css :noweb-ref Declaration Blocks
-  #number-two {
-    <<number-two Declarations>>
-  }
-  #+end_src
-
-  Then the declarations for each ID.
-  First, for Number 2.
-  From the assignment:
-
-  #+begin_quote
-  - *The second element*: blue text and a font size of 36px
-  #+end_quote
-
-  Let's add those declarations.
-  First for the color, it's /blue/, but
-
-  #+begin_quote
-  For the colors in this exercise, try using a non-keyword value (RGB, HEX, or HSL).
-  #+end_quote
-
-  Then, I'll try something new for me: RGB with parentheses.
-  We need nothing of red and green, and all of blue.
-
-  ~<<number-two Declarations>> +≡~
-
-  #+begin_src css :noweb-ref number-two Declarations
-  color: rgb(0, 0, 255);
-  #+end_src
-
-  Then the font size.
-
-  ~<<number-two Declarations>> +≡~
-
-  #+begin_src css :noweb-ref number-two Declarations
-  font-size: 36px;
-  #+end_src
-
-  Now, for Number 4.
-
-  ~<<Declaration Blocks>> +≡~
-
-  #+begin_src css :noweb-ref Declaration Blocks
-  #number-four {
-    <<number-four Declarations>>
-  }
-  #+end_src
-
-  From the assignment:
-
-  #+begin_quote
-  - *The fourth element*: a light green background, a font size of 24px, and bold
-  #+end_quote
-
-  For the "light green background", I want to use another method to set the color: HSL (Hue, Saturation, Lightness).
-  Starting from the basic green, and saturation, just adjusting Lightness seemed to do the trick.
-  - Hue: 120 (green)
-  - Saturation: 100%
-  - Lightness: 75%
-
-  Let's add this to Number 4's CSS declaration block.
-
-  ~<<number-four Declarations>> +≡~
-
-  #+begin_src css :noweb-ref number-four Declarations
-  background-color: hsl(120 100% 75%);
-  #+end_src
-
-  Now the font properties.
-
-  ~<<number-four Declarations>> +≡~
-
-  #+begin_src css :noweb-ref number-four Declarations
+#+begin_src css :noweb-ref Declaration Blocks
+.adjust-font-size {
   font-size: 24px;
-  font-weight: bold;
-  #+end_src
+}
+#+end_src
 
-  And this checks the Self Check:
+and add that class to both Numbers.
+We first add it to Number 3.
 
-  #+begin_quote
-  - Do the even numbered =div= elements have unique IDs?
-  #+end_quote
+~<<Number 3 classes>> +≡~
+
+#+begin_src css :noweb-ref Number 3 classes
+adjust-font-size
+#+end_src
+
+Then to Number 4.
+As we'll need to also add an ID later, let's add a code block ID.
+
+~<<Number 4>> +≡~
+
+#+begin_src html :noweb-ref Number 4 :noweb-prefix nil
+<div <<number 4 attributes>> >Number 4 - I'm another ID.</div>
+#+end_src
+
+Then, add the class.
+
+~<<number 4 attributes>> +≡~
+
+#+begin_src html :noweb-ref number 4 attributes
+class="adjust-font-size"
+#+end_src
+
+Now, let's focus on the even numbers.
+From the Self Check:
+
+#+begin_quote
+- Do the even numbered =div= elements have unique IDs?
+#+end_quote
+
+Let's add IDs for them.
+
+~<<Number 2>> +≡~
+
+#+begin_src html :noweb-ref Number 2
+<div id="number-two">Number 2 - I'm one ID.</div>
+#+end_src
+
+Number 4 will have its own ID too.
+
+~<<number 4 attributes>> +≡~
+
+#+begin_src html :noweb-ref number 4 attributes
+id="number-four"
+#+end_src
+
+Then the CSS declaration blocks.
+As I am using /IDs/ for selectors, I need to prefix them with ~#~.
+
+~<<Declaration Blocks>> +≡~
+
+#+begin_src css :noweb-ref Declaration Blocks
+#number-two {
+  <<number-two Declarations>>
+}
+#+end_src
+
+Then the declarations for each ID.
+First, for Number 2.
+From the assignment:
+
+#+begin_quote
+- *The second element*: blue text and a font size of 36px
+#+end_quote
+
+Let's add those declarations.
+First for the color, it's /blue/, but
+
+#+begin_quote
+For the colors in this exercise, try using a non-keyword value (RGB, HEX, or HSL).
+#+end_quote
+
+Then, I'll try something new for me: RGB with parentheses.
+We need nothing of red and green, and all of blue.
+
+~<<number-two Declarations>> +≡~
+
+#+begin_src css :noweb-ref number-two Declarations
+color: rgb(0, 0, 255);
+#+end_src
+
+Then the font size.
+
+~<<number-two Declarations>> +≡~
+
+#+begin_src css :noweb-ref number-two Declarations
+font-size: 36px;
+#+end_src
+
+Now, for Number 4.
+
+~<<Declaration Blocks>> +≡~
+
+#+begin_src css :noweb-ref Declaration Blocks
+#number-four {
+  <<number-four Declarations>>
+}
+#+end_src
+
+From the assignment:
+
+#+begin_quote
+- *The fourth element*: a light green background, a font size of 24px, and bold
+#+end_quote
+
+For the "light green background", I want to use another method to set the color: HSL (Hue, Saturation, Lightness).
+Starting from the basic green, and saturation, just adjusting Lightness seemed to do the trick.
+- Hue: 120 (green)
+- Saturation: 100%
+- Lightness: 75%
+
+
+Let's add this to Number 4's CSS declaration block.
+
+~<<number-four Declarations>> +≡~
+
+#+begin_src css :noweb-ref number-four Declarations
+background-color: hsl(120 100% 75%);
+#+end_src
+
+Now the font properties.
+
+~<<number-four Declarations>> +≡~
+
+#+begin_src css :noweb-ref number-four Declarations
+font-size: 24px;
+font-weight: bold;
+#+end_src
+
+And this checks the Self Check:
+
+#+begin_quote
+- Do the even numbered =div= elements have unique IDs?
+#+end_quote
