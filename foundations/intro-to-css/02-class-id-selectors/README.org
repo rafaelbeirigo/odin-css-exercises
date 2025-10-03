@@ -52,11 +52,9 @@ image below.
   <p class="odd">Number 1 - I'm a class!</p>
   #+end_src
 
-  Number 3 is special:
+  Number 3 is special; as per the assignment:
 
   #+begin_quote
-  *** Self Check
-  [...]
   - Does the Number 3 element have multiple classes?
   #+end_quote
 
