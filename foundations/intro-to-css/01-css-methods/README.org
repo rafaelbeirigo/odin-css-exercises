@@ -1,138 +1,115 @@
 # -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
 
 * Methods for Adding CSS
-  :PROPERTIES:
-  :CUSTOM_ID: methods-for-adding-css
-  :END:
-In this exercise, you're going to practice adding CSS to an HTML file
-using all three methods: external CSS, internal CSS, and inline CSS. You
-should only be using type selectors for this exercise when adding styles
-via the external and internal methods. You should also use keywords for
-colors (e.g. "blue") instead of using RGB or HEX values.
-
- - Me: So the rules are:
-   1. Only *type* selectors, and
-   2. Only *named* colors.
-
-There are three elements for you to add styles to, each of which uses a
-different method of adding CSS to it, as noted in the outcome image
-below. All other exercises in this section will have a CSS file provided
-and linked for you, but for this exercise you will have to create the
-file and link it in the HTML file yourself. This is all about practicing
-using these different methods and getting the syntax right.
+First, the assignment rules:
 
 #+begin_quote
-  Quick tip:
-  Do not worry about details in these exercises that are not
-  specifically mentioned in the exercise or self check section. Because
-  the desired outcomes are screenshots, your browser may show a
-  different font, the colors may appear different on your machine, or
-  the spacing between elements may look different. Only concern yourself
-  with the specific items you are supposed to be learning for each
-  exercise.
+1. Only *type* selectors, and
+2. Only *named* colors.
 #+end_quote
 
-The properties you need to add to each element are:
+First properties to add:
 
-- =div=: a red background, white text, a font size of 32px, center
-  aligned, and bold
+#+begin_quote
+- =div=:
+  - a red background,
+  - white text,
+  - a font size of 32px,
+  - center aligned, and
+  - bold.
+#+end_quote
 
-  - Me: Ok, let's start here.
-    The element in question is:
-    #+begin_src html
+The element in question is:
+#+begin_src html
+<div>Style me via the external method!</div>
+#+end_src
+
+As it should use the /external/ method, we'll have to tangle a new CSS file.
+There will only be one declaration block there.
+We follow the rule and use a *type* selector, in this case for the ~div~ element.
+
+[[file:style.css][style.css]] ≡
+
+#+begin_src css :tangle style.css
+div {
+  <<External Declarations>>
+}
+#+end_src
+
+As we'll need to link =style.css= on =index.html=, let's tangle it here, with the original content plus our necessary additions.
+Let's link =style.css= there.
+
+[[file:index.html][index.html]] ≡
+
+#+begin_src html :tangle index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <style>
+    <<Internal Declarations>>
+    </style>
+    <title>Methods for Adding CSS</title>
+  </head>
+  <body>
     <div>Style me via the external method!</div>
-    #+end_src
+    <p>I would like to be styled with the internal method, please.</p>
+    <<Button>>
+  </body>
+</html>
+#+end_src
 
-    As it should use the /external/ method, we'll have to tangle a new CSS file.
-    There will only be one declaration block there.
-    We follow the rule and use a *type* selector, in this case for the ~div~ element.
+Now we add the required CSS declarations.
 
-    [[file:style.css][style.css]] ≡
+~<<External Declarations>> +≡~
 
-    #+begin_src css :tangle style.css
-    div {
-      <<External Declarations>>
-    }
-    #+end_src
+#+begin_src css :noweb-ref External Declarations
+background-color:red;
+color:white;
+font-size:32px;
+text-align:center;
+font-weight:bold;
+#+end_src
 
-    As we'll need to link =style.css= on =index.html=, let's tangle it here, with the original content plus our necessary additions.
-    Let's link =style.css= there.
+The next style is to be applied to the ~p~ element.
 
-    [[file:index.html][index.html]] ≡
+#+begin_quote
+- =p=:
+  - a green background,
+  - white text, and
+  - a font size of 18px.
+#+end_quote
 
-    #+begin_src html :tangle index.html
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css">
-        <style>
-          <<Internal Declarations>>
-        </style>
-        <title>Methods for Adding CSS</title>
-      </head>
-      <body>
-        <div>Style me via the external method!</div>
-        <p>I would like to be styled with the internal method, please.</p>
-        <<Button>>
-      </body>
-    </html>
-    #+end_src
+This one has to be done with the /internal/ method.
+Let's add the ~style~ element to =index.html='s ~head~.
+Then we add the CSS declaration block for the element type we need to style, in this case ~p~.
 
-    Now we add the required CSS declarations.
+~<<Internal Declarations>> +≡~
 
-    ~<<External Declarations>> +≡~
+#+begin_src css :noweb-ref Internal Declarations
+p {
+  background-color:green;
+  color:white;
+  font-size:18px;
+}
+#+end_src
 
-    #+begin_src css :noweb-ref External Declarations
-    background-color:red;
-    color:white;
-    font-size:32px;
-    text-align:center;
-    font-weight:bold;
-    #+end_src
+Finally, we style the ~button~ element.
 
-- =p=: a green background, white text, and a font size of 18px
-  - Me: This one has to be done with the /internal/ method.
-    Let's add the ~style~ element to =index.html='s ~head~.
-    Then we add the CSS declaration block for the element type we need to style, in this case ~p~.
+#+begin_quote
+- =button=:
+  - an orange background and
+  - a font size of 18px.
+#+end_quote
 
-    ~<<Internal Declarations>> +≡~
+As the styling for the button will be /inline/, we bring the element here.
+Then we add the ~style~ /attributte/ for the element, with the appropriate declarations.
 
-    #+begin_src css :noweb-ref Internal Declarations
-    p {
-      background-color:green;
-      color:white;
-      font-size:18px;
-    }
-    #+end_src
+~<<Button>> +≡~
 
-- =button=: an orange background and a font size of 18px
-  - Me: As the styling for the button will be /inline/, we bring the element here.
-    Then we add the ~style~ /attributte/ for the element, with the appropriate declarations.
-
-    ~<<Button>> +≡~
-
-    #+begin_src html :noweb-ref Button
-    <button style="background-color:orange; font-size=18px;">Inline Method</button>
-    #+end_src
-
-** Desired Outcome
-   :PROPERTIES:
-   :CUSTOM_ID: desired-outcome
-   :END:
-#+caption: desired outcome
-[[./desired-outcome.png]]
-
-*** Self Check
-    :PROPERTIES:
-    :CUSTOM_ID: self-check
-    :END:
-- Did you use all three methods of adding CSS to an HTML file?
-- Did you properly link the external CSS file in the HTML file?
-- Does the =div= element have CSS added via the external method?
-- Does the =p= element have CSS added via the internal method?
-- Does the =button= element have CSS added via the inline method?
-Me: Yes to all.
-Done!
+#+begin_src html :noweb-ref Button
+<button style="background-color:orange; font-size=18px;">Inline Method</button>
+#+end_src
