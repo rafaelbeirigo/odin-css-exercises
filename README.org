@@ -7,11 +7,11 @@
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/03-grouping-selectors][03-grouping-selectors]]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/04-chaining-selectors][04-chaining-selectors]]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/intro-to-css/05-descendant-combinator][05-descendant-combinator]]
+  - cascade [0/1]
+    - [ ] 01-cascade-fix
   - [ ] block-and-inline [0/2]
     - [ ] 01-margin-and-padding-1
     - [ ] 02-margin-and-padding-2
-  - cascade [0/1]
-    - [ ] 01-cascade-fix
   - [ ] flex [0/7]
     - [ ] 01-flex-center
     - [ ] 02-flex-header
