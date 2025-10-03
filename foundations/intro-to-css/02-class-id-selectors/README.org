@@ -137,8 +137,6 @@ image below.
   and
 
   #+begin_quote
-  *** Self Check
-  [...]
   - Does the Number 3 element have multiple classes?
   #+end_quote
 
