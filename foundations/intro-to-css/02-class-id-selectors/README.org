@@ -1,19 +1,9 @@
 # -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
 
 * Class and ID Selectors
-  :PROPERTIES:
-  :CUSTOM_ID: class-and-id-selectors
-  :END:
-Knowing how to add class and ID attributes to HTML elements, as well as
-use their respective selectors, is invaluable. It's important to
-practice using them.
-
-There are several elements in the HTML file provided, which you will
-have to add either class or ID attributes to, as noted in the outcome
-image below.
-
-- Me: Ok, the elements are in =index.html=.
-  Let's start by preparing the tangle, so we can modify it here.
+  In order to use *classes* and *IDs*, we need to add the corresponding attributes to the proper elements.
+  This is done in =index.html=.
+  Let's start tangling it, so we can modify it here.
 
   [[file:index.html][index.html]] ≡
 
