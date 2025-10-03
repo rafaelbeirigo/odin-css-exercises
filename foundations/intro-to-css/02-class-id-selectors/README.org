@@ -141,7 +141,7 @@ image below.
   #+end_quote
 
   I then must create another class for Number 3.
-  As both Number 3 and 4 share the same font size, they'll use this class.
+  Now, as both Number 3 and Number 4 share the same font size, we'll use this class for that property, and add the class to both Numbers.
 
   ~<<Declaration Blocks>> +≡~
 
