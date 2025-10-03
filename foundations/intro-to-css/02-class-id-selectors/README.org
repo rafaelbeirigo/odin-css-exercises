@@ -4,6 +4,7 @@
 In order to use *classes* and *IDs*, we need to add the corresponding attributes to the proper elements.
 This is done in =index.html=.
 Let's start tangling it, so we can modify it here.
+We add a code placeholder for each Number, so we can work with them gradually.
 
 [[file:index.html][index.html]] ≡
 
