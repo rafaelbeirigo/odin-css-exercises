@@ -141,7 +141,7 @@ image below.
   #+end_quote
 
   I then must create another class for Number 3.
-  Now, as both Number 3 and Number 4 share the same font size, we'll use this class for that property, and add the class to both Numbers.
+  Now, as both Number 3 and Number 4 share the same font size, we'll use this class for that property,
 
   ~<<Declaration Blocks>> +≡~
 
@@ -151,7 +151,8 @@ image below.
   }
   #+end_src
 
-  Then add the class to Number 3's attribute.
+  and add that class to both Numbers.
+  We first add it to Number 3.
 
   ~<<Number 3 classes>> +≡~
 
@@ -159,7 +160,24 @@ image below.
   adjust-font-size
   #+end_src
 
-  Now, the even numbers.
+  Then to Number 4.
+  As we'll need to also add an ID later, let's add a code block ID.
+
+  ~<<Number 4>> +≡~
+
+  #+begin_src html :noweb-ref Number 4 :noweb-prefix nil
+  <div <<number 4 attributes>> >Number 4 - I'm another ID.</div>
+  #+end_src
+
+  Then, add the class.
+
+  ~<<number 4 attributes>> +≡~
+
+  #+begin_src html :noweb-ref number 4 attributes
+  class="adjust-font-size"
+  #+end_src
+
+  Now, let's focus on the even numbers.
   From the Self Check:
 
   #+begin_quote
@@ -174,12 +192,12 @@ image below.
   <div id="number-two">Number 2 - I'm one ID.</div>
   #+end_src
 
-  Number 4 will have its ID, and share a class with Number 3 for font size.
+  Number 4 will have its own ID too.
 
-  ~<<Number 4>> +≡~
+  ~<<number 4 attributes>> +≡~
 
-  #+begin_src html :noweb-ref Number 4
-  <div id="number-four" class="adjust-font-size">Number 4 - I'm another ID.</div>
+  #+begin_src html :noweb-ref number 4 attributes
+  id="number-four"
   #+end_src
 
   Then the CSS declaration blocks.
