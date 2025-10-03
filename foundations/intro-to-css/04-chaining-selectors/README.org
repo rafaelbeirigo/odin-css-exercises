@@ -1,3 +1,5 @@
+* Chaining Selectors
+
 We start by tangling =style.css=.
 We'll be using *chaining* for the selectors, and we'll need two declaration blocks.
 
