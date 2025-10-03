@@ -10,9 +10,36 @@ You can edit the CSS file by adding, removing, or editing selectors for a declar
 *You should not edit the HTML file or any of the actual styles in the CSS*.
 #+end_quote
 
+Let's start with the /buttons/.
+First the *Confirm* one.
 
+From =index.html=:
 
+#+begin_src html
+<button id="confirm-button" class="button confirm">Confirm</button>
+#+end_src
 
+From =style.css=, the rules applied to *Confirm* are, in order:
 
+#+begin_src css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
 
+.confirm {
+  background: green;
+  color: white;
+  font-weight: bold;
+}
 
+.button {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+#+end_src
+
+Let's analyze the resolution of those rules.
+As they have the same priority---both selectors are /classes/---the *last defined* rule is applied.
+This is why *Confirm* does not get a green background, as it should.
+This is fixed by swapping those declaration blocks.
