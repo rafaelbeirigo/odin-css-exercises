@@ -12,13 +12,7 @@ You can edit the CSS file by adding, removing, or editing selectors for a declar
 
 
 
-** Desired Outcome
 
-#+caption: desired outcome
-[[./desired-outcome.png]]
 
-*** Self Check
 
-- Did you make sure to not edit the HTML file?
-- If you added selectors to the CSS, do they target a valid HTML element?
 
