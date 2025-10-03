@@ -44,7 +44,7 @@ image below.
   - Do the odd numbered =p= elements share a class?
   #+end_quote
 
-  Let's integrate all that knowledge, and apply a class to each odd number.
+  Let's add every odd number to a class called, well, ~odd~.
 
   ~<<Number 1>> +≡~
 
