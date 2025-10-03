@@ -43,3 +43,35 @@ Let's analyze the resolution of those rules.
 As they have the same priority---both selectors are /classes/---the *last defined* rule is applied.
 This is why *Confirm* does not get a green background, as it should.
 This is fixed by swapping those declaration blocks.
+
+Let's take a look at the element for the second paragraph.
+
+#+begin_src html
+<p class="para small-para">I'm a smaller paragraph, also with extra bold text!</p>
+#+end_src
+
+The rules currently applied are, in order:
+
+#+begin_src css
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.para,
+.small-para {
+  color: hsl(0, 0%, 0%);
+  font-weight: 800;
+}
+
+.small-para {
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.para {
+  font-size: 22px;
+}
+#+end_src
+
+The two rules controlling font size both have *classes* as descriptors.
+Again, the last defined one is applied, and we have to swap them to fix the problem.
