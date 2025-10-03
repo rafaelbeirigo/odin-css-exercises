@@ -116,8 +116,8 @@ div.text {
 #+end_src
 
 In this case, we have the selectors:
-1. /div.text/: *class + type*
-2. /.child/: *class*
+1. ~div.text~: *class + type*
+2. ~.child~: *class*
 
 The first selector /div.text/ has higher priority.
 We could fix it by giving an even higher priority to the appropriate rule.
