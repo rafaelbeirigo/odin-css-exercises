@@ -1,13 +1,5 @@
 # -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
 
-* Margin and Padding #2
-  :PROPERTIES:
-  :CUSTOM_ID: margin-and-padding-2
-  :END:
-This one is a little nicer looking, and a little closer to something you
-might see in the real world. You'll need to change a little more than
-just margin and padding to make it look exactly right.
-
 * ~index.html~
 
 [[file:~/dev/odin/2-css-exercises/foundations/block-and-inline/02-margin-and-padding-2/index.html][~/dev/odin/2-css-exercises/foundations/block-and-inline/02-margin-and-padding-2/index.html]] ≡
@@ -32,30 +24,162 @@ just margin and padding to make it look exactly right.
 </html>
 #+end_src
 
-* Desired outcome
-   :PROPERTIES:
-   :CUSTOM_ID: desired-outcome
-   :END:
-#+caption: desired outcome
-[[./desired-outcome.png]]
+* ~style.css~
 
-** Self Check
-    :PROPERTIES:
-    :CUSTOM_ID: self-check
-    :END:
-Use this section to check your work. On /these/ projects, your goal
-isn't to attain 100% pixel perfection, but to use the tools you've
-learned to get relatively close to the desired output.
+[[file:style.css][style.css]] ≡
 
-- There is 8px between the edge of the card and its content (the blue
-  sections).
-- There is an 8px gap between each of the blue sections inside the card.
-- The title of the card uses a 16px font.
-- There are 8px between the title text and the edge of the title
-  section.
-- The content section has 16px space on the top and bottom, and 8px on
-  either side.
-- Everything inside the =.button-container= section is centered, and
-  there is 8px padding.
-- The Big Button is centered on its own line.
-- The Big Button has 24px space on the sides, and 8px on top and bottom.
+#+begin_src css :tangle style.css
+<<custom properties>>
+
+body {
+  background: #eee;
+  font-family: sans-serif;
+}
+
+.card {
+  width: 400px;
+  background: #fff;
+  margin: 16px auto;
+  <<increase card width>>
+  <<add some padding for the card's contents>>
+}
+
+.title {
+  background: #e3f4ff;
+  <<give ~title~ some padding>>
+  <<fix ~title~ margins>>
+}
+
+.content {
+  background: #e3f4ff;
+  <<give ~content~ some padding>>
+  <<increase ~content~ font size>>
+  <<add ~content~ margins>>
+}
+
+.button-container {
+  background: #e3f4ff;
+  <<center "and a">>
+  <<increase "and a" font size>>
+  <<give "and a button" some padding>>
+  
+}
+
+button {
+  background: white;
+  border: 1px solid #eee;
+  <<increase button font size>>
+  <<give button its own exclusive line>>
+  <<center the button>>
+  <<give the button some padding>>
+}
+#+end_src
+
+** ~<<custom properties>> +≡~
+
+#+begin_src css :noweb-ref custom properties
+:root {
+  --gap: 15px;
+}
+#+end_src
+
+** ~.card~
+
+~<<increase card width>> +≡~
+
+#+begin_src css :noweb-ref increase card width
+width: 850px;
+#+end_src
+
+~<<add some padding for the card's contents>> +≡~
+
+#+begin_src css :noweb-ref add some padding for the card's contents
+padding: 36px var(--gap) var(--gap) var(--gap);
+#+end_src
+
+** ~.title~
+
+~<<give ~title~ some padding>> +≡~
+
+#+begin_src css :noweb-ref give ~title~ some padding
+padding: 10px;
+#+end_src
+
+~<<fix ~title~ margins>> +≡~
+
+#+begin_src css :noweb-ref fix ~title~ margins
+margin: 0;
+#+end_src
+
+** ~.content~
+
+*** ~<<give ~content~ some padding>> +≡~
+
+#+begin_src css :noweb-ref give ~content~ some padding
+padding: 20px 10px;
+#+end_src
+
+It's roughly the same as ~h1~, which [[https://www.w3schools.com/cssref/css_default_values.php][is ~2em~ by default]].
+
+*** ~<<increase ~content~ font size>> +≡~
+
+#+begin_src css :noweb-ref increase ~content~ font size
+font-size: 2em;
+#+end_src
+
+*** ~<<add ~content~ margins>> +≡~
+
+#+begin_src css :noweb-ref add ~content~ margins
+margin-top: var(--gap);
+#+end_src
+
+** ~.button-container~
+
+In order to center text inside a ~div~, we use *text properties*;
+
+~<<center "and a">> +≡~
+
+#+begin_src css :noweb-ref center "and a"
+text-align: center;
+#+end_src
+
+~<<increase "and a" font size>> +≡~
+
+#+begin_src css :noweb-ref increase "and a" font size
+margin-top: var(--gap);
+font-size: 2em;
+#+end_src
+
+~<<give "and a button" some padding>> +≡~
+
+#+begin_src css :noweb-ref give "and a button" some padding
+padding: 10px;
+#+end_src
+
+** ~button~
+
+~<<give button its own exclusive line>> +≡~
+
+#+begin_src css :noweb-ref give button its own exclusive line
+display: block;
+#+end_src
+
+~<<center the button>> +≡~
+
+#+begin_src css :noweb-ref center the button
+margin-left: auto;
+margin-right: auto;
+#+end_src
+
+~<<give the button some padding>> +≡~
+
+#+begin_src css :noweb-ref give the button some padding
+padding: 15px 50px;
+#+end_src
+
+~<<increase button font size>> +≡~
+
+#+begin_src css :noweb-ref increase button font size
+font-size: 1em;
+#+end_src
+

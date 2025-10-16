@@ -1,3 +1,7 @@
+:root {
+  --gap: 15px;
+}
+
 body {
   background: #eee;
   font-family: sans-serif;
@@ -7,21 +11,38 @@ body {
   width: 400px;
   background: #fff;
   margin: 16px auto;
+  width: 850px;
+  padding: 36px var(--gap) var(--gap) var(--gap);
 }
 
 .title {
   background: #e3f4ff;
+  padding: 10px;
+  margin: 0;
 }
 
 .content {
   background: #e3f4ff;
+  padding: 20px 10px;
+  font-size: 2em;
+  margin-top: var(--gap);
 }
 
 .button-container {
   background: #e3f4ff;
+  text-align: center;
+  margin-top: var(--gap);
+  font-size: 2em;
+  padding: 10px;
+  
 }
 
 button {
   background: white;
   border: 1px solid #eee;
+  font-size: 1em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 50px;
 }
