@@ -32,14 +32,14 @@ just margin and padding to make it look exactly right.
 </html>
 #+end_src
 
-** Desired outcome
+* Desired outcome
    :PROPERTIES:
    :CUSTOM_ID: desired-outcome
    :END:
 #+caption: desired outcome
 [[./desired-outcome.png]]
 
-*** Self Check
+** Self Check
     :PROPERTIES:
     :CUSTOM_ID: self-check
     :END:
