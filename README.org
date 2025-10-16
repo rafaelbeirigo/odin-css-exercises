@@ -10,7 +10,7 @@
   - cascade [1/1]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/cascade/01-cascade-fix][01-cascade-fix]]
   - [ ] block-and-inline [0/2]
-    - [ ] 01-margin-and-padding-1
+    - [ ] [[github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/block-and-inline/01-margin-and-padding-1][01-margin-and-padding-1]]
     - [ ] 02-margin-and-padding-2
   - [ ] flex [0/7]
     - [ ] 01-flex-center
