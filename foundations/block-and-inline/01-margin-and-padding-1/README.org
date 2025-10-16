@@ -1,14 +1,46 @@
 # -*- auto-fill-function: nil; eval: (add-hook 'after-save-hook 'org-babel-tangle nil t); -*-
 
 * Margin and Padding practice
-  :PROPERTIES:
-  :CUSTOM_ID: margin-and-padding-practice
-  :END:
+
+#+begin_quote
 For this first exercise, simply edit the =style.css= file so that the
 divs look like the image below. Only edit the CSS where instructed in
 the file. You should only have to change the values of the margin and
 padding for this exercise. You should not have to add or remove
 properties in the CSS, or touch the HTML.
+#+end_quote
+
+[[file:~/dev/odin/2-css-exercises/foundations/block-and-inline/01-margin-and-padding-1/style.css][~/dev/odin/2-css-exercises/foundations/block-and-inline/01-margin-and-padding-1/style.css]] ≡
+
+#+begin_src css :tangle style.css
+body {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.one {
+  background: pink;
+  border: 3px solid blue;
+  /* CHANGE ME */
+  padding: 0px;
+  margin: 0px;
+}
+
+.two {
+  background: lightblue;
+  border: 3px solid purple;
+  /* CHANGE ME */
+  margin-bottom: 0px;
+}
+
+.three {
+  background: peachpuff;
+  border: 3px solid brown;
+  width: 200px;
+  /* CHANGE ME */
+  padding: 0px;
+  margin-left: 0px;
+}#+end_src
 
 #+caption: outcome
 [[./desired-outcome.png]]
