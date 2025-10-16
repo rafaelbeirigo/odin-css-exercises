@@ -8,6 +8,30 @@ This one is a little nicer looking, and a little closer to something you
 might see in the real world. You'll need to change a little more than
 just margin and padding to make it look exactly right.
 
+* ~index.html~
+
+[[file:~/dev/odin/2-css-exercises/foundations/block-and-inline/02-margin-and-padding-2/index.html][~/dev/odin/2-css-exercises/foundations/block-and-inline/02-margin-and-padding-2/index.html]] ≡
+
+#+begin_src html :tangle ~/dev/odin/2-css-exercises/foundations/block-and-inline/02-margin-and-padding-2/index.html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin and Padding exercise 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="card">
+      <h1 class="title">I'm a card</h1>
+      <div class="content">I have content inside me..lorem ipsum blah blah blah. Here's some stuff you need to read.</div>
+      <div class="button-container">and a <button>BIG BUTTON</button></div>
+    </div>
+  </body>
+</html>
+#+end_src
+
 ** Desired outcome
    :PROPERTIES:
    :CUSTOM_ID: desired-outcome
