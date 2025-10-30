@@ -12,10 +12,10 @@
   - [X] block-and-inline [2/2]
     - [X] [[github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/block-and-inline/01-margin-and-padding-1][01-margin-and-padding-1]]
     - [X] [[https://github.com/rafaelbeirigo/odin-css-exercises/tree/main/foundations/block-and-inline/02-margin-and-padding-2][02-margin-and-padding-2]]
-  - [ ] flex [0/7]
-    - [ ] 01-flex-center
-    - [ ] 02-flex-header
-    - [ ] 03-flex-header-2
+  - [-] flex [3/7]
+    - [X] 01-flex-center
+    - [X] 02-flex-header
+    - [X] 03-flex-header-2
     - [ ] 04-flex-information
     - [ ] 05-flex-modal
     - [ ] 06-flex-layout
