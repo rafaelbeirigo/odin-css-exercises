@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+*,
+*::before,
+*::after {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.spaced-stack * + * {
+  margin-top: 1em;
+}
+
 html, body {
   height: 100%;
 }
@@ -16,6 +29,9 @@ body {
 }
 
 .modal {
+  display: flex;
+  padding: 16px;
+  gap: 16px;
   background: white;
   width: 480px;
   border-radius: 10px;
@@ -33,6 +49,15 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.25em;
+  font-weight: bold;
 }
 
 .close-button {
@@ -48,6 +73,10 @@ body {
   justify-content: center;
   border: 1px solid #eee;
   padding: 0;
+}
+
+.text {
+  padding: 10px 0;
 }
 
 button {
@@ -66,4 +95,9 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.close-button {
+  text-align: center;
+  align-items: center;
 }
